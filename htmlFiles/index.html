@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="st.css">
+    
+</head>
+<body>
+    <!--wrapper-->
+    <div class="wrapper">
+        <h1>WEATHER APP</h1>
+        <div class="dataBtn">
+            <div class="btn1">Your Weather</div>
+            <div class="btn2">Search Weather</div>
+        </div>
+        <!--weather container-->
+        <div class="dataWeather">
+            <!--loaction valla-->
+            <div class="grantAccess">
+                <img src="location.png" alt="" width="80" height="80">
+                <div>Grant Loaction Access</div>
+                <div>
+                    Allow access to location
+                </div>
+                <button class="btn" type="button">
+                    Grant Access
+                </button>
+            </div>
+            <!--search from-->
+            <div class="search_form">
+                <input placeholder="Search Your City......" place>
+                <img src="search.png" alt="" width="80" height="80" dataSearch>
+            </div>
+            <!--loading-->
+            <div class="dataLoad">
+                <img src="load gif.gif" alt="" width="80" height="80">
+                <p>Loading</p>
+            </div>
+            <!--current weather-->
+            <div class="yourWeather">
+                <div class="name">
+                    <p class="cityName"> </p>
+                    <img dataCountryicon>
+                </div>
+                <p class="dataWeatherDes"></p>
+                <img class="dataweatherIcon" alt="">
+                <p class="dataTemp"></p>
+                <!--card vallla-->
+                <div class="cards">
+                    <!--3 cards-->
+                    <div class="parameter">
+                        <img src="wind.png" alt="">
+                        <p>windspeed</p>
+                        <p class="dataWind"></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="humidity.png" alt="">
+                        <p>humidity</p>
+                        <p class="dataHumidity"></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="cloud.png" alt="">
+                        <p>clouds</p>
+                        <p class="dataclouds"></p>
+                    </div>
+                </div>
+            </div>
+            <!--404 not found-->
+            <div class="not-found">
+                <img src="not-found.png" alt="" width="200px" height="200px">
+                <p class="not">THIS IS NOT A VALID CITY!</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    
+    
+</body>
+</html>
